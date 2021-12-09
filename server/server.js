@@ -3,6 +3,7 @@ var request = require("request");
 
 var app = express();
 const port = process.env.PORT || 3000;
+
 app.post("/", (req, res) => {
   res.set({
     "Access-Control-Allow-Origin": "https://compilor.study",
@@ -27,9 +28,9 @@ app.post("/", (req, res) => {
         language: language,
         stdin: inputs,
         versionIndex: "0",
-        clientId: "MyCLientID",
+        clientId: "1a06c1f835ba9b2ccf218d8fe381182d",
         clientSecret:
-          "MyCLientSecret"
+          "3762082933511c0ad39b8ba3908d45accbefaf946c38dd88161758185dc9dbec"
       };
       request(
         {
